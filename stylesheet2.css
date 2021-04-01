@@ -47,6 +47,10 @@ header {
   float: left;
 }
 
+.header-left a {
+  color: #ecbc38;
+}
+
 .header-right {
   float: right;
   line-height: 65px;
@@ -89,9 +93,13 @@ span.search-icon {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  width: 100%;
   position: relative;
   margin: auto;
+}
+
+.mySlides img{
+  height: 400px;
 }
 
 /* Caption text */
@@ -179,6 +187,7 @@ span.search-icon {
 }
 
 .lesson-wrapper {
+  margin-top: 20px;
   padding-bottom: 80px;
   padding-left: 5%;
   padding-right: 5%;
@@ -293,7 +302,7 @@ span.search-icon {
   padding-right: 15%;
   background-color: #cbdff1;
   width: 100%;
-  text-align: justify;
+  text-align: center;
   float: left;
 }
 
@@ -303,7 +312,6 @@ span.search-icon {
 
 .lesson2 {
   display:inline-block;
-  margin-right: 20px;
 }
 
 .lesson2 h3{
@@ -322,6 +330,7 @@ span.search-icon {
   height: 150px;
   border-radius: 10px;
   margin:auto;
+  text-align: justify;
   
 }
 
@@ -333,73 +342,210 @@ span.search-icon {
   background-color: #9baaa1;
 }
 
-/* Untuk Tablet */
-@media all and (max-width: 1000px) {
-  .lesson {
-    width: 50%;
-    margin-bottom: 50px;
-  }
-  
-  .lesson2 {
-    width: 30%;
-    margin-bottom: 20px;
-    padding-left:1px;
-  }
 
-  .heading h2 {
-    font-size: 20px;
-  }
 
-  .main{
-    width: 100%;
-    height: 1000px;
-    margin: 0 auto;
-  }
-  
-  .lessons-main{
-    width: 40%;
-  }
-   
-  .lesson-main-icon {
-    width: 100%;
-  } 
+/* Ramdhan Start */
+.testimoni {
+  height: 800px;
+  color: white;
+  background-color: #013243;
+  text-align: center;
+  margin: 10px 0 20px 0;
+  padding-top: 50px;
+}
+
+.judul-testimoni h2{
+  height: 300px;
+  text-align: center;
+}
+
+.testimoni .card {
+  padding: 15px;
+  height: 350px;
+  position: relative;
+  max-width: 450px;
+  background: #ffffff;
+  margin: 10px;
+  display: inline-flex;
+  color: black;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.testimoni .card:hover{
+  background-color: #717171;
+  cursor: pointer;
+}
+
+.card p {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.card h2 {
+  text-align: justify;
+}
+
+.testimoni .card .imgBx {
+  max-width: 150px;
+  flex: 0 0 150px;
 
 }
 
-/* Untuk Smartphone */
-@media all and (max-width: 670px) {
-  .lesson {
-    width: 100%;
-  }
-  
-  .lesson2 {
-    width: 50%;
-    
-  }
-  .btn {
-    width: 100%;
-  }
+.testimoni .card .imgBx img {
+  max-width: 100%;
+  text-align: center;
+}
 
-  .main{
-    margin: 0 auto;
-    width: 100%;
-    height: 1200px;
-  }
-  
-  .lessons-main{
-    width: 100%;
-  }
+.testimoni .card .content {
+  margin-left: 20px;
+}
 
-  .lesson-main-icon i{
-    width: 100%;
-    margin: 0 auto;
-    padding-left: 15px;
-  }
+.testimoni .content h2{
+  height: 50px;
+  font-size: 18px;
+  border-bottom: 1px solid #8ea3d1;
+}
 
-  .lesson-main-icon p{
-    text-align: center;
-    margin: 20px 0 0 140px;
+@media (max-width: 1000px) {
+  .testimoni {
+    flex-direction: column;
   }
+}
 
-  
+@media (max-width: 760px) {
+  .testimoni {
+    flex-direction: column;
+  }
+}
+
+.footer {
+  background-color: #ffec8b;
+  height: 750px;
+}
+
+.footer h1 {
+  text-align: center;
+  padding: 20px;
+}
+.footer h2 {
+  text-transform: uppercase;
+
+}
+
+.support {
+  padding-top: 20px;
+  padding-bottom: 200px;
+  border-bottom: 2px solid;
+}
+
+.contact {
+  text-align: center;
+  float: left;
+  width: 20%;
+  position: relative;
+}
+
+.contact p {
+  padding-top: 10px;
+}
+
+.support-contact {
+  display: block;
+}
+
+.support-contact img {
+  border-radius: 2000px;
+  width: 100px;
+  height: 100px;
+  /*--------------foto----------------------*/
+}
+
+.footer-form {
+  float: right;
+  width: 200px;
+  padding-top: 50px;
+  margin-right: 150px;
+  height: 200px;
+  position: relative;
+  background: red;
+}
+
+input,
+textarea {
+  width: 150px;
+}
+
+/*-----------form kontak us---------*/
+
+.section {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.section-footer {
+  float: left;
+  padding: 50px 0;
+  width: 280px;
+  position: relative;
+}
+
+.section-footer p{
+  padding-top: 20px;
+  font-size: 16px;
+}
+
+.section-footer h2 {
+  border-bottom: 2px solid #fff;
+  text-align: center;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.section-footer .place {
+  text-align: left;
+}
+
+.place h3 {
+  text-align: left;
+  font-size: 16px ;
+  font-weight: normal;
+  margin-top: 20px;
+}
+
+.footer-list li{
+  list-style: none;
+}
+
+.footer-list li:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+.place {
+  width: auto;
+}
+
+.follow-logo a {
+  float: left;
+  color: black;
+  margin: 18px;
+  align-items: center;
+}
+
+.footer-logo {
+  padding: 20px;
+  text-align: center;
+  background-color: #013243;
+}
+
+.footer-logo h1 {
+  font-size: 30px;
+  color: white;
+}
+
+.footer-logo p {
+  font-style: italic;
+  font-size: 12px;
+  color: yellow;
 }
